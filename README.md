@@ -95,7 +95,7 @@ zerops:
         - pnpm i
         - pnpm run build
       deploy: # Build artifacts deployed to the runtime
-        - 'dist/~'
+        - dist/~
       cache: # Cache for faster next round of build 
         - node_modules
         - pnpm-lock.yaml
