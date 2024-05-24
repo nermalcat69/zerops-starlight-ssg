@@ -5,8 +5,6 @@ This is a template for deploying astro's starlight docs(SSG) to zerops with a ze
 
 ## Using Zerops Gui - [go to zerops dashboard](https://app.zerops.io)
 
-[! Alt name](https://youtu.be/ZahXCIaUr_A)
-
 ### Importing in a new project
 
 ```yaml
@@ -62,15 +60,7 @@ services:
     minContainers: 1
 ```
 
-```
-npm create astro@latest -- --template starlight
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+> 🧑‍🚀 **Confused about how to import?** Watch this video https://youtu.be/ZahXCIaUr_A !
 
 ## 🚀 Project Structure
 
@@ -87,7 +77,9 @@ Inside of your Astro + Starlight project, you'll see the following folders and f
 │   └── env.d.ts
 ├── astro.config.mjs
 ├── package.json
-└── tsconfig.json
+├── pnpm-lock.yaml
+├── tsconfig.json
+└── zerops.yml
 ```
 
 Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
@@ -96,18 +88,14 @@ Images can be added to `src/assets/` and embedded in Markdown with a relative li
 
 Static assets, like favicons, can be placed in the `public/` directory.
 
-## 🧞 Commands
+## 🧞 Zcli Commands
 
-All commands are run from the root of the project, from a terminal:
+Commands you need to know to deploy a project to zerops.
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `zcli login <token>`      | login to your [zerops account using your token](https://app.zerops.io/settings/token-management)    |
+| `zcli push`             | pushes your project to a service(you need to have zerops.yml in your root dir)     |
 
 ## 👀 Want to learn more?
 
