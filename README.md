@@ -86,22 +86,20 @@ pnpm run build
 
 ```bash
 zerops:
-  - setup: starlight # Service Name
+  - setup: starlight # Service hostname
     build:
-      base: nodejs@18 # Service Runtime
-      buildCommands: # Build Commands
+      base: nodejs@18 # Technology used to build the app
+      buildCommands: # Build commands
         - pnpm i
         - pnpm run build
-      deploy: # Deployed in File browser
+      deploy: # Build artifacts deployed to the runtime
         - 'dist/~'
-      cache: # Used for faster pushes
+      cache: # Cache for faster next round of build 
         - node_modules
         - pnpm-lock.yaml
 ```
 
-## 🧞 Zcli Commands
-
-Commands you need to know to deploy a project to zerops.
+Follow these commands to deploy a project to zerops.
 
 | Command              | Action                                                                                           |
 | :------------------- | :----------------------------------------------------------------------------------------------- |
@@ -110,7 +108,7 @@ Commands you need to know to deploy a project to zerops.
 
 ## 👨‍💻 Facing Issues while deploying?
 
-If you still find yourself stuck in the process join our [Discord community](https://discord.gg/5ptAqtpyvh) or Checkout [Zerops Docs](https://docs.zerops.io).
+If you still find yourself stuck in the process join [Zerops Discord Server](https://discord.gg/5ptAqtpyvh) or Checkout [Zerops Docs](https://docs.zerops.io).
 
 ## 👀 Want to learn more about Starlight?
 
