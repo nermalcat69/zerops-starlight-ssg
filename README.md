@@ -30,7 +30,7 @@ Images can be added to `src/assets/` and embedded in Markdown with a relative li
 
 Static assets, like favicons, can be placed in the `public/` directory.
 
-## Deploying Using Zerops Gui - [go to zerops dashboard](https://app.zerops.io)
+## Deploying Using Zerops Gui - [Go to Zerops Dashboard](https://app.zerops.io)
 
 ### Importing in a new project
 
