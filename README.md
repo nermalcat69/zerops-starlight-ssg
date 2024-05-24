@@ -64,7 +64,7 @@ services:
 
 > 🧑‍🚀 **Confused about how to import?** Watch this video https://youtu.be/ZahXCIaUr_A !
 
-> To import into an existing project just go to the project and check the left sidebar.
+> To import into an existing project just go to the project and check the left sidebar to import a service.
 
 ## Deploying Using Zerops Cli - [@zeropsio/zcli](https://github.com/zeropsio/zcli)
 
