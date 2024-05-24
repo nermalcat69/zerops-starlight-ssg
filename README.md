@@ -35,7 +35,9 @@ Static assets, like favicons, can be placed in the `public/` directory.
 ### Importing in a new project
 
 ```yaml
-# You can remove the project parameter if you're importing a service into an existing project instead of creating a new one
+# You can remove the project parameter if you're importing 
+# a service into an existing project instead of creating a 
+# new one
 project:
   name: zerops-nextjs
 
