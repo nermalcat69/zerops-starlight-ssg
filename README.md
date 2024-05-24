@@ -2,7 +2,7 @@
 
 # Starlight on Zerops - SSG
 
-This is a template for deploying astro's starlight docs(SSG) to zerops with a guide on how to deploy to zerops using both their gui and cli.
+This is a template for deploying Astro's Starlight docs (SSG) to Zerops, along with a guide on how to deploy to Zerops using both their GUI and CLI.
 
 ## 🚀 Project Structure
 
@@ -35,7 +35,7 @@ Static assets, like favicons, can be placed in the `public/` directory.
 ### Importing in a new project
 
 ```yaml
-# You can remove project paramaeter if you're importing a service into an existing project instead of creating a new project
+# You can remove the project parameter if you're importing a service into an existing project instead of creating a new one
 project:
   name: zerops-nextjs
 
@@ -62,9 +62,9 @@ services:
     minContainers: 1
 ```
 
-> 🧑‍🚀 **Confused about how to import?** Watch this video https://youtu.be/ZahXCIaUr_A !
+> 🧑‍🚀 **Confused about how to import?** Watch this video about how to import and setup a new project https://youtu.be/ZahXCIaUr_A !
 
-> To import into an existing project just go to the project and check the left sidebar to import a service.
+> To import into an existing project just go to the existing project and check the left sidebar to import a service(make sure that the project parameter in import yaml).
 
 ## Deploying Using Zerops Cli - [@zeropsio/zcli](https://github.com/zeropsio/zcli)
 
@@ -104,7 +104,7 @@ Follow these commands to deploy a project to zerops.
 | Command              | Action                                                                                           |
 | :------------------- | :----------------------------------------------------------------------------------------------- |
 | `zcli login <token>` | login to your [zerops account using your token](https://app.zerops.io/settings/token-management) |
-| `zcli push`          | pushes your project to a service(you need to have zerops.yml in your root dir)                   |
+| `zcli push`          | pushes your codebase to a service(you need to have zerops.yml in your root dir)                   |
 
 ## 👨‍💻 Facing Issues while deploying?
 
