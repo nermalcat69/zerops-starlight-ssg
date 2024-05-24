@@ -105,8 +105,8 @@ Follow these commands to deploy a project to zerops.
 
 | Command              | Action                                                                                           |
 | :------------------- | :----------------------------------------------------------------------------------------------- |
-| `zcli login <token>` | login to your [zerops account using your token](https://app.zerops.io/settings/token-management) |
-| `zcli push`          | pushes your codebase to a service(you need to have zerops.yml in your root dir)                   |
+| `zcli login <token>` | Command to login to your zerops account using your [token](https://app.zerops.io/settings/token-management). |
+| `zcli push`          | Command to push your codebase to a service (you need to have zerops.yml in your root directory).                   |
 
 ## 👨‍💻 Facing Issues while deploying?
 
