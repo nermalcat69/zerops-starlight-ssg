@@ -1,6 +1,61 @@
-# Starlight Starter Kit: Basics
-
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+
+# Starlight on Zerops - SSG
+
+### Import in a new project
+
+```yaml
+project:
+  name: zerops-nextjs
+
+services:
+  - hostname: starlight
+    type: nginx@1.22
+    nginxConfig: |-
+      server {
+          listen 80 default_server;
+          listen [::]:80 default_server;
+
+          server_name _;
+          root /var/www;
+
+          location / {
+              try_files $uri $uri/ /index.html;
+          }
+
+          access_log syslog:server=unix:/dev/log,facility=local1 default_short;
+          error_log syslog:server=unix:/dev/log,facility=local1;
+      }
+    buildFromGit: https://github.com/nermalcat69/zerops-starlight-ssg
+    enableSubdomainAccess: true
+    minContainers: 1
+```
+
+### Importing in an existing Project
+
+```yaml
+services:
+  - hostname: starlight
+    type: nginx@1.22
+    nginxConfig: |-
+      server {
+          listen 80 default_server;
+          listen [::]:80 default_server;
+
+          server_name _;
+          root /var/www;
+
+          location / {
+              try_files $uri $uri/ /index.html;
+          }
+
+          access_log syslog:server=unix:/dev/log,facility=local1 default_short;
+          error_log syslog:server=unix:/dev/log,facility=local1;
+      }
+    buildFromGit: https://github.com/nermalcat69/zerops-starlight-ssg
+    enableSubdomainAccess: true
+    minContainers: 1
+```
 
 ```
 npm create astro@latest -- --template starlight

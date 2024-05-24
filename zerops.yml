@@ -1,0 +1,12 @@
+zerops:
+  - setup: starlight
+    build:
+      base: nodejs@18
+      buildCommands:
+        - pnpm i
+        - pnpm run build
+      deploy:
+        - 'dist/~'
+      cache:
+        - node_modules
+        - pnpm-lock.yaml
