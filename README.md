@@ -1,8 +1,11 @@
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
 # Starlight on Zerops - SSG
-This is a template for deploying a starlight project to zerops with a zerops.yml with both their gui and cli.
+This is a template for deploying astro's starlight docs(SSG) to zerops with a zerops.yml with both their gui and cli.
 
+## Using Zerops Gui - [go to zerops dashboard](https://app.zerops.io)
+
+[! Alt name](https://youtu.be/ZahXCIaUr_A)
 
 ### Importing in a new project
 
