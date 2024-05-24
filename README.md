@@ -2,7 +2,7 @@
 
 # Starlight on Zerops - SSG
 
-This is a template for deploying astro's starlight docs(SSG) to zerops with a zerops.yml with both their gui and cli.
+This is a template for deploying astro's starlight docs(SSG) to zerops with a guide on how to deploy to zerops using both their gui and cli.
 
 ## 🚀 Project Structure
 
