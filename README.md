@@ -35,7 +35,7 @@ Static assets, like favicons, can be placed in the `public/` directory.
 ### Importing in a new project
 
 ```yaml
- # You can remove project paramaeter if you're importing a service into an existing project instead of creating a new project
+# You can remove project paramaeter if you're importing a service into an existing project instead of creating a new project
 project:
   name: zerops-nextjs
 
@@ -108,6 +108,10 @@ Commands you need to know to deploy a project to zerops.
 | `zcli login <token>` | login to your [zerops account using your token](https://app.zerops.io/settings/token-management) |
 | `zcli push`          | pushes your project to a service(you need to have zerops.yml in your root dir)                   |
 
-## 👀 Want to learn more?
+## 👨‍💻 Facing Issues while deploying?
+
+If you still find yourself stuck in the process join our [Discord community](https://discord.gg/5ptAqtpyvh) or Checkout [Zerops Docs](https://docs.zerops.io).
+
+## 👀 Want to learn more about Starlight?
 
 Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
